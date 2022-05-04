@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd"
+             version="2.2">
+    <persistence-unit name="JPU" transaction-type="RESOURCE_LOCAL">
+        <class>com.jdc.onestop.students.entity.Account</class>
+        <class>com.jdc.onestop.students.entity.Class</class>
+        <class>com.jdc.onestop.students.entity.ClassDays</class>
+        <class>com.jdc.onestop.students.entity.Course</class>
+        <class>com.jdc.onestop.students.entity.Employee</class>
+        <class>com.jdc.onestop.students.entity.Payment</class>
+        <class>com.jdc.onestop.students.entity.Registration</class>
+        <class>com.jdc.onestop.students.entity.Student</class>
+        <properties>
+
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/student"/>
+            <property name="javax.persistence.jdbc.user" value="root"/>
+            <property name="javax.persistence.jdbc.password" value="password"/>
+            <property name="javax.persistence.schema-generation.database.action" value="create"/>
+        </properties>
+    </persistence-unit>
+</persistence>
